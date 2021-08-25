@@ -1,0 +1,30 @@
+Esquema de rutas - Routers es una standarizacion de urls.
+
+Api rest -> cuatro metodos (8 en realidad)
+	get -> lista 
+	Post
+	put -> updatea TODO
+	patch -> updatea un elemento - un solo elemento
+	delete
+
+Modelos - recursos/ serializers (para un solo modelo). Serializers x url 
+
+box/id/activiti -> getter
+
+
+forms - trabajo al mismo nivel. Hay diferencias
+
+	clean piso validate
+
+field level validation
+
+para validar el titulo por ej:
+	validate_campo
+
+
+# funciona muy parecio graphql
+ObjectType
+
+
+
+Bindear o buildear: comprimidas (archivo bildeado) "obfuscar" 
