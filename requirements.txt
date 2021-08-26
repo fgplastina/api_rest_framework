@@ -1,4 +1,7 @@
 django
 djangorestframework
 pygments
-
+# Heroku reqs
+django-heroku
+gunicorn
+whitenoise
