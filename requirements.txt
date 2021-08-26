@@ -5,3 +5,5 @@ pygments
 django-heroku
 gunicorn
 whitenoise
+#IPython
+ipython
