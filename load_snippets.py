@@ -46,6 +46,11 @@ def random_command():
     letters = string.ascii_lowercase
     return ''.join(random.choice(letters) for i in range(0,10))
 
+#Randominazdor de lenguajes
+def random_language():
+    language = ['python', 'bash', 'java','javascript','abap','php','go','rust','csharp','ruby','ssp']
+    return random.choice(language)
+
 #Generador de snippets. 
 def create_snippets(cantidad):
     #
@@ -54,7 +59,7 @@ def create_snippets(cantidad):
         try:
             data = {
                 'code': random_command(),
-                'language': 'bash',
+                'language': random_language(),
             }
             response = requests.post('http://127.0.0.1:8000/snippets/', auth=('admin','admin.12345'), json=data)
             response.raise_for_status()
@@ -67,8 +72,7 @@ def create_snippets(cantidad):
         except requests.exceptions.Timeout as errt:
             print(errt)
         except requests.exceptions.RequestException as err:
-            print(err)
-
+            print(err )
 
 # Llamada al 'main'
 load_snippets_data()
